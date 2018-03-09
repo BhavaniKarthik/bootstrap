@@ -16,12 +16,16 @@
   }
 
   thead th {
+    padding: 0.65rem;
     vertical-align: bottom;
     border-bottom: (2 * $table-border-width) solid $table-border-color;
+    &:not(:last-child){
+      border-right: 0.0625rem solid $white;
+    }
   }
 
   tbody + tbody {
-    border-top: (2 * $table-border-width) solid $table-border-color;
+    border: (2 * $table-border-width) solid $table-border-color;
   }
 
   .table {
@@ -47,7 +51,7 @@
 // Add or remove borders all around the table and between all the columns.
 
 .table-bordered {
-  border: $table-border-width solid $table-border-color;
+  border: 0.05rem solid $table-border-color;
 
   th,
   td {
@@ -118,6 +122,7 @@
       color: $table-dark-color;
       background-color: $table-dark-bg;
       border-color: $table-dark-border-color;
+
     }
   }
 
@@ -137,6 +142,7 @@
   th,
   td,
   thead th {
+    border: .0625rem solid;
     border-color: $table-dark-border-color;
   }
 
